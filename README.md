@@ -18,11 +18,11 @@ While reading through this thing the second time I came to conclusion it might b
 
 4) Create folder somewhere inside `C:\Users\teemu` eg. `C:\Users\teemu\datascience`. I don't know why but this is only way I got it to work with my Docker toolbox.
 
-5) Go to that folder using Quickstart-terminal and download `Exercise 1.ipynb` and `HASYv2`-dataset. Uncompress the dataset. It might take a while.
+5) Download `Exercise 1.ipynb` and `HASYv2`-dataset to the folder. Uncompress the dataset. It might take a while.
 
 6) After you have downloaded the image run the container using: `docker run -it -p 8888:8888 -v ///c/Users/teemu/datascience/week4:/home/jovyan/week4 jupyter/tensorflow-notebook` (Change the path accordingly). You should see a link similar to: `http://localhost:8888/?token=766f8bc899fa77a1adc177623c8db5a136c90b45532c27d2`
 
-7) If you have Docker toolchain Docker is actually running on Docker Machine. Type `docker-machine ip` to get its IP. For me it was `192.168.99.100`. So the notebook is running on `192.168.99.100:8888`.
+7) If you have Docker Toolchain Docker is actually running on Docker Machine. Type `docker-machine ip` to get its IP. For me it was `192.168.99.100`. So the notebook is running on `192.168.99.100:8888`.
 
 8) And that's it! You should be able to see the folder from the notebook.
 
