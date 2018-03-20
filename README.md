@@ -105,6 +105,12 @@ This one works too if there is no other container IDs starting with 'f'
 Removes/deletes stopped container  
 `docker rm f4`
 
+Removes all containers according to pattern, in this case the beginning of their image hash "cf64"
+`docker ps -a | grep cf64 | awk '{print $1}' | xargs docker rm`
+
+Removes image
+`docker rmi org/image`
+
 Ssh's into container with ID starting with f4 and opens up bash-interpreter  
 `docker exec -it f4 bash`
 
